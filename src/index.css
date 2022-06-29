@@ -46,7 +46,6 @@ nav {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  box-shadow: 0 0px 10px #0dada6;
 }
 
 .body-content--col {
