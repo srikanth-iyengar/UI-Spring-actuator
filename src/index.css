@@ -1,13 +1,73 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #15171f;
+}
+
+nav {
+  background-color: #1d1e26;
+  display: flex;
+  padding: 10px 15px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav-text {
+  color: #ffffff;
+  margin-right: 30px;
+  margin-top: 7px;
+}
+
+.nav-logo {
+  margin-right: 9px;
+}
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  bottom: 50%;
+  width: 40px;
+  position: absolute;
+  height: 0%;
+}
+
+.body-content--row {
+  margin-left: 40px;
+  height: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0px 10px #0dada6;
+}
+
+.body-content--col {
+  margin: 10px, 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.glow-button {
+  color: #ff653e;
+  padding: 0;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0px 10px #0dada6;
+}
+
+.glow-icon-sucess {
+  box-shadow: 0 0px 10px #0dada6;
+}
+
+.glow-icon-fail {
+  box-shadow: 0 0px 10px #ff653e;
 }
