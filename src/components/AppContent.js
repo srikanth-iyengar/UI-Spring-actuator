@@ -26,7 +26,7 @@ export default function AppContent() {
         <CardCpu />
         <CardJvm />
       </div>
-      <div className="body-content--col" style={{marginLeft: 30}}>
+      <div className="body-content--col" style={{ marginLeft: 30 }}>
         <EurekaServer />
       </div>
     </div>

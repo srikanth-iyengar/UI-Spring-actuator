@@ -60,7 +60,7 @@ nav {
 }
 
 .glow-button:hover {
-  box-shadow: 0 0px 10px #0dada6;
+  box-shadow: 0 0px 10px #19e1d7;
 }
 
 .glow-icon-sucess {
@@ -69,4 +69,29 @@ nav {
 
 .glow-icon-fail {
   box-shadow: 0 0px 10px #ff653e;
+}
+
+.body-content--http {
+  margin-left: 60px;
+  display: flex;
+}
+
+.http-method--GET {
+  color: #b990f4;
+}
+
+.http-method--POST {
+  color: #4adb70;
+}
+
+.http-method--DELETE {
+  color: #db4d50;
+}
+
+.http-method--PUT {
+  color: #eead68;
+}
+
+.http-method--OPTIONS {
+  color: #85def1;
 }
