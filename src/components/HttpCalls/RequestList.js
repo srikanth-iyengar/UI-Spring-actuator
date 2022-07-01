@@ -28,31 +28,31 @@ const RequestList = ({ requests, refreshList }) => {
   };
 
   return (
-    <div className="body-content--http">
+    <div className="">
       <Card
         style={{
           width: "fit-content",
           background: "#191c26",
-          marginLeft: 3,
+          marginLeft: 23,
           marginRight: 3,
           marginTop: 3,
           marginBottom: 3,
         }}
       >
         <CardContent>
-          <Grid container spacing={25}>
+          <Grid container spacing={29.4}>
             <Grid item>
               <Typography variant="h4" style={{ color: "white" }}>
-                Trace of Http requst
+                Trace of Http request
               </Typography>
             </Grid>
             <Grid item>
-              <IconButton size="medium" style={{boxShadow: "0 0px 10px white"}} onClick={refreshList}>
+              <IconButton size="medium" style={{boxShadow: "0 0px 10px white"}} onClick={refreshList} color="primary">
                 <RefreshIcon style={{ color: "white", }} />
               </IconButton>
             </Grid>
           </Grid>
-          <TableContainer component={Paper} sx={{minWidth: 600}}>
+          <TableContainer component={Paper} sx={{maxWidth: 590}}>
             <Table>
               <TableHead>
                 <TableCell style={{ color: "white" }} align="center">

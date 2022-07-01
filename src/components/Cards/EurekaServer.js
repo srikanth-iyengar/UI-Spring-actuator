@@ -51,14 +51,13 @@ const EurekaServer = () => {
         setServer(all_servers);
       })
       .catch((err) => {
-        console.log(err);
       });
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
       getServer();
-    }, 5000);
+    }, 6000);
     return () => clearInterval(interval);
   });
 
@@ -71,7 +70,7 @@ const EurekaServer = () => {
         marginRight: 3,
         marginTop: 23.75,
         marginBottom: 3,
-        height: 600,
+        height: 593,
       }}
     >
       <CardContent>
@@ -80,7 +79,7 @@ const EurekaServer = () => {
         </Typography>
         <List sx={{ width: "100%", width: matchMedia }}>
           {servers.map((service) => (
-            <ListItem alignItems="flex-start">
+            <ListItem alignItems="flex-start" key={service["name"]}>
               <Grid container spacing={2}>
                 <Grid item>
                   <ServerStatus status={service["status"]} />
